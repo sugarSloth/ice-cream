@@ -56,9 +56,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-  /* or 20px */
-
-
   color: var(--main-text-color);
 }
 
@@ -137,28 +134,8 @@ input:invalid {
   color: var(--main-text-color);
 }
 
-.modal__map {
-  max-width: 224px;
-  max-height: 199px;
 
-  @media screen and (min-width: 480.1px) {
-    max-width: 448px;
-    max-height: 260px;
-  }
-}
 
-.product-card__backdrop {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.product-card__title {
-  margin-bottom: 83px;
-  font-family: 'Seymour One';
-  font-size: 16px;
-  line-height: calc(24 / 16);
-}
 
 .product-card__list {
   display: flex;

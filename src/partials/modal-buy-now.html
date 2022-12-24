@@ -1,7 +1,7 @@
 <!-- MODAL BUY NOW -->
-<div class="product-card__backdrop is-hidden" data-modal>
-  <div class="modal" data-modal-window>
-    <button class="modal__close-button">
+<div class="backdrop is-hidden" data-modal-buy-now>
+  <div class="modal">
+    <button class="modal__close-button" data-modal-buy-now-close>
       <svg class="" width="" height="">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
@@ -40,23 +40,11 @@
       <div class="modal__form-item">
         <input type="text" name="modal-tel" pattern="[0-9]{10}" placeholder=" " class="modal__input" />
         <label class="modal__placeholder">Phone</label>
-
-
-      </div>
-
-      <div class="modal__form-item">
-        <input type="text" name="modal-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder=" "
-          class="modal__input" />
-        <label class="modal__placeholder">Email</label>
-
-
       </div>
 
       <div class="modal__form-item modal__form-item--comment">
         <textarea name="feedback" rows="5" placeholder=" " class="modal__input"></textarea>
         <label class="modal__placeholder">Comment</label>
-
-
       </div>
 
       <button type="submit" class="modal__button">
@@ -65,6 +53,3 @@
     </form>
   </div>
 </div>
-
-<!-- JS -->
-<script src="./js/modal.js"></script>
