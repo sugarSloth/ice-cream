@@ -1,0 +1,70 @@
+<!-- MODAL BUY NOW -->
+<div class="product-card__backdrop is-hidden" data-modal>
+  <div class="modal" data-modal-window>
+    <button class="modal__close-button">
+      <svg class="" width="" height="">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Buy now</p>
+    <ul class="product-card__list">
+      <li class="product-card__item ice-cream">
+        <input class="visually-hidden" type="checkbox" name="product" value="ice_cream" />
+        <div class="product-card__description ice-cream">
+          <h2 class="product-card__text">Ice cream</h2>
+        </div>
+      </li>
+      <li class="product-card__item ice-coffee">
+        <input class="visually-hidden" type="checkbox" name="product" value="ice_coffee" />
+        <div class="product-card__description ice-coffee">
+          <h2 class="product-card__text">Ice coffee</h2>
+        </div>
+
+      </li>  
+      <li class="product-card__item milkshake">
+        <input class="visually-hidden" type="checkbox" name="product" value="milkshake" />
+        <div class="product-card__description milkshake">
+          <h2 class="product-card__text">Milkshake</h2>
+        </div>
+
+      </li>
+    </ul>
+    <form class="modal__form">
+      <div class="modal__form-item">
+        <input type="text" name="modal-name" pattern="[A-Za-z]{4,8}" placeholder=" " id="name" class="modal__input" />
+        <label class="modal__placeholder">Name</label>
+
+
+      </div>
+
+      <div class="modal__form-item">
+        <input type="text" name="modal-tel" pattern="[0-9]{10}" placeholder=" " class="modal__input" />
+        <label class="modal__placeholder">Phone</label>
+
+
+      </div>
+
+      <div class="modal__form-item">
+        <input type="text" name="modal-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder=" "
+          class="modal__input" />
+        <label class="modal__placeholder">Email</label>
+
+
+      </div>
+
+      <div class="modal__form-item modal__form-item--comment">
+        <textarea name="feedback" rows="5" placeholder=" " class="modal__input"></textarea>
+        <label class="modal__placeholder">Comment</label>
+
+
+      </div>
+
+      <button type="submit" class="modal__button">
+        <span class="modal__button-text">Submit</span>
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="./js/modal.js"></script>
