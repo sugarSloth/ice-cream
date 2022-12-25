@@ -1,0 +1,26 @@
+.modal__video {
+
+    min-width: 220px;
+    min-height: 199px;
+    margin-bottom: 32px;
+
+}
+
+.video {
+    position: relative;
+    width: 220px;
+    height: 199px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .modal__video {
+        max-width: 444px; //568 - 2-2-60-60
+    }
+
+    .video {
+        width: 444px;
+        height: 205px;
+    }
+}

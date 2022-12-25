@@ -1,18 +1,18 @@
-<div class="backdrop is-hidden" data-modal-ingredients >
+<div class="backdrop is-hidden" data-modal-ingredients>
     <div class="modal">
-        <button class="modal__close-button" data-modal-ingredients-close >
+        <button class="modal__close-button" data-modal-ingredients-close>
             <svg class="" width="" height="">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
 
-        <p class="modal__text">Chololate icecream</p>
+        <p class="modal__title">Chololate icecream</p>
 
         <div class="ice-cream-div">
             <picture class="ice-cream-div__picture">
                 <source media="(min-width: 480px)"
-                    srcset="./images/ingredients/img/img-ice-cream@1x.jpg 1x, ./images/ingredients/img/img-ice-cream@2x.jpg 2x">
-                <img src="./images/ingredients/img/img-ice-cream@1x.jpg" alt="ice-cream"
+                    srcset="./images/modal-ingredients/img/img-ice-cream@1x.jpg 1x, ./images/modal-ingredients/img/img-ice-cream@2x.jpg 2x">
+                <img src="./images/modal-ingredients/img/img-ice-cream@1x.jpg" alt="ice-cream"
                     class="ice-cream-div__img">
             </picture>
         </div>
@@ -94,18 +94,26 @@
                 </ul>
             </li>
         </ul>
-        <form class="ingredients-form">
-            <label for="dient-name"></label>
-            <input type="text" name="dient-name" id="dient-name" class="ingredients-form__name" placeholder="Name">
+        <form class="modal__form">
+            <div class="modal__form-item">
+                <input type="text" name="modal-name" pattern="[A-Za-z]{4,8}" placeholder=" " id="name"
+                    class="modal__input" />
+                <label class="modal__placeholder">Name</label>
+            </div>
 
-            <label for="dient-tel"></label>
-            <input type="tel" name="dient-tel" id="dient-tel" class="ingredients-form__tel" placeholder="Phone">
+            <div class="modal__form-item">
+                <input type="text" name="modal-tel" pattern="[0-9]{10}" placeholder=" " class="modal__input" />
+                <label class="modal__placeholder">Phone</label>
+            </div>
 
-            <label for="dient-comment"></label>
-            <textarea type="textarea" name="dient-comment" id="dient-comment" class="ingredients-form__comment"
-                placeholder="Comment"></textarea>
+            <div class="modal__form-item modal__form-item--comment">
+                <textarea name="feedback" rows="5" placeholder=" " class="modal__input"></textarea>
+                <label class="modal__placeholder">Comment</label>
+            </div>
 
-            <button type="submit" class="ingredients-form__button">Submit</button>
+            <button type="submit" class="modal__button">
+                <span class="modal__button-text">Submit</span>
+            </button>
         </form>
     </div>
 </div>

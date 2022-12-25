@@ -10,14 +10,14 @@
   border-radius: 10px;
 
   width: 100%;
-  max-width: 280px;
+  max-width: 480px;
   height: auto;
   align-content: center;
 
   overflow-y: scroll;
   overflow: hidden;
 
-  @media screen and (min-width: 480.1px) {
+  @media screen and (min-width: 480px) {
     max-width: 568px;
     padding: 32px 60px;
   }
