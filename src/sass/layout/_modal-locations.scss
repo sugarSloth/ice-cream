@@ -1,6 +1,7 @@
 .modal__map {
     max-width: 224px;
     max-height: 199px;
+    margin: 0  auto;
 
     @media screen and (min-width: 480.1px) {
         max-width: 448px;

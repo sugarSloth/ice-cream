@@ -11,10 +11,12 @@
      opacity: 1;
      transition: opacity var(--normal-transition-duration, --normal-transition-timing-function);
 
+     overflow: auto;
+
      /* Приховування коли вікно неактивне */
      &.is-hidden {
          opacity: 0;
          visibility: hidden;
          pointer-events: none;
-     }
- }
+    }
+}

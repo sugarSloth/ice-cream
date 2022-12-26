@@ -6,6 +6,10 @@ body {
   color: var(--main-text-color);
 
   background-color: var(--background-color);
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 .joint-background {
